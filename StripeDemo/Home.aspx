@@ -284,11 +284,6 @@
             document.getElementById("checkOutButton").style.display = "none";
             document.getElementById("placeOrderDiv").style.display = "block";
         }
-        function disableButton() {
-            document.getElementById("PlaceOrder").disabled = true;
-            document.getElementById("PlaceOrder").innerHTML = "Placing Order... Please wait..";
-            return true;
-        }
     </script>
 </body>
 </html>
