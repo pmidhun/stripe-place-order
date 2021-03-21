@@ -206,7 +206,7 @@
                         <label for="cvvCode">CVC Code</label>
                         <input type="number" id="cvvCode" runat="server" name="cvvCode" maxlength="3" min="100" max="999" placeholder="123" /><br />
                         <br />
-                        <asp:Button ID="PlaceOrder" Text="PlaceOrder" OnClick="PlaceOrder_Click" runat="server" />
+                        <asp:Button ID="PlaceOrder" Text="Place Order" OnClick="PlaceOrder_Click" OnClientClick="this.disabled = true; this.value = 'Submitting...';" UseSubmitBehavior="false" runat="server" />
                         <asp:HiddenField runat="server" ID="hdnTotalPrice" />
                     </div>
                 </form>
@@ -283,6 +283,11 @@
         function CheckOutButtonOnClick() {
             document.getElementById("checkOutButton").style.display = "none";
             document.getElementById("placeOrderDiv").style.display = "block";
+        }
+        function disableButton() {
+            document.getElementById("PlaceOrder").disabled = true;
+            document.getElementById("PlaceOrder").innerHTML = "Placing Order... Please wait..";
+            return true;
         }
     </script>
 </body>
