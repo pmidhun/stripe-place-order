@@ -42,3 +42,6 @@ Before you begin running this solution on your machine, ensure you have met the 
 * Create a PaymentMethod API, Create a PaymentIntent API and Confirm a PaymentIntent API are required to charge a card.
 * Firstly, a Payment Method needs to be created. This API would create a Payment Method and provide you with a result that contains a Payment Method ID. More information available @ https://stripe.com/docs/api/payment_methods/create.
 * Secondly, a Payment Intent needs to be created and confirmed. You can create and confirm in a single API call by including confirm as true in the Request API. Also, please include the PaymentMethod ID that  you would get from the Payment Method API call result.
+
+![Stripe-Payment](https://user-images.githubusercontent.com/2746205/112159543-3fadd400-8c24-11eb-8e55-b67cd26abd73.jpg)
+
