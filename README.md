@@ -16,7 +16,7 @@ Before you begin running this solution on your machine, ensure you have met the 
 
 * Clone this repository and open this solution in Visual Studio.
 * Go to web.config file and add the test's environment secret key. It would be in the format sk_test_abighexadecimalstring.
-	* <add key="API_KEY" value="ADD YOUR KEY HERE"/>
+	* `<add key="API_KEY" value="ADD YOUR KEY HERE"/>`
 * Build and run the solution.
 * Add a few items to the cart and click on the 'Check Out' button.
 * For successful payment, use the card number 4242424242424242, expiry date in the future and a random 3 digit number for CVC code.
